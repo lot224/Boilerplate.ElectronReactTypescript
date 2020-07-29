@@ -1,0 +1,13 @@
+{
+    "editor.tabSize": 2,
+    "files.exclude": {
+        "**/build": true,
+        "**/dist": true,
+        "**/node_modules": true,
+        "**/react-app-env.d.ts": true,
+        "**/serviceWorker.ts": true,
+        "**/setupTests.ts": true,
+        "**/yarn.lock": true,
+        "**/package-lock.json": true
+    }
+}

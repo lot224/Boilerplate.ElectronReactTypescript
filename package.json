@@ -1,0 +1,64 @@
+{
+  "name": "electron_react_typescript_sass_bootstrap_fontawesome",
+  "productName": "Electron React App",
+  "description": "A base application utilizing Electron, React, Typescript, Sass, Bootstrap, Font-Awesome and more",
+  "version": "0.1.0",
+  "main": "build/electron/main.js",
+  "homepage": "./",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "export BROWSER=none && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-electron": "export ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^9.1.2",
+    "electron-builder": "^22.8.0",
+    "node-sass": "^4.14.1",
+    "bootstrap": "^4.5.0",
+    "bootswatch": "^4.5.0",
+    "font-awesome": "^4.7.0"
+  },
+  "build": {
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "publish": {
+      "provider": "github",
+      "repo": "unknown",
+      "owner": "unknown"
+    }
+  }
+}
